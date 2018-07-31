@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  The best Swiper component for React Native.
+  The best Swiper-Dismiss component for React Native.
 </p>
 
 <p align="center">
