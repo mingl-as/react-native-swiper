@@ -620,7 +620,7 @@ export default class extends Component {
 
   renderScrollView = pages => {
     if (Platform.OS === 'ios') {
-      const offset = this.initialRender ? { x: this.props.width || Dimensions.get('screen').width } : this.state.offset;
+      const offset = this.initialRender ? { x: (this.props.width || Dimensions.get('screen').width) * (this.props.index + 1) } : this.state.offset;
       return (
         <ScrollView ref={this.refScrollView}
           {...this.props}
