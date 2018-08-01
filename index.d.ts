@@ -102,5 +102,8 @@ declare module 'react-native-swiper' {
     }
 
     export default class Swiper extends Component<SwiperProps, any> {
+        scrollBy(arg0: any): any {
+            throw new Error("Method not implemented.");
+        }
     }
 }
