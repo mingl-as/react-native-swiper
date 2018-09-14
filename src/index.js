@@ -288,6 +288,8 @@ export default class extends Component {
       state.offset = offset
     }
 
+    Object.assign(state, { height: this.props.height || height, width: this.props.width || width });
+
     // related to https://github.com/leecade/react-native-swiper/issues/570
     // contentOffset is not working in react 0.48.x so we need to use scrollTo
     // to emulate offset.
